@@ -93,7 +93,7 @@ const Index = () => {
                     <Icon name="Star" size={32} className="text-accent" />
                   </div>
                 </div>
-                <h4 className="font-semibold text-lg mb-2">Высшая категория</h4>
+                <h4 className="font-semibold text-lg mb-2">Соответсвие занимаемой должности</h4>
                 <p className="text-muted-foreground text-sm">
                   Подтвержденная квалификация педагога
                 </p>
