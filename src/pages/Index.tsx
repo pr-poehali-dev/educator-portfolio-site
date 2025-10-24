@@ -61,7 +61,7 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-b from-muted to-background">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
-            <Badge className="mb-4 bg-secondary text-secondary-foreground">Воспитатель высшей категории</Badge>
+            <Badge className="mb-4 bg-secondary text-secondary-foreground">Воспитатель МБДОУ №8 "Сказка" пгт Смоляниново Шкотовского муниципального округа Приморского края</Badge>
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Елена Иванова
             </h2>
