@@ -51,6 +51,9 @@ const Index = () => {
             <a href="#" className="text-foreground hover:text-primary transition-colors">
               Главная
             </a>
+            <a href="#methods" className="text-foreground hover:text-primary transition-colors">
+              Методики
+            </a>
             <a href="#achievements" className="text-foreground hover:text-primary transition-colors">
               Достижения
             </a>
@@ -131,6 +134,117 @@ const Index = () => {
                 и формированию социальных навыков у детей.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="methods" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-3xl font-bold text-foreground mb-4 text-center">
+              Образовательные методики
+            </h3>
+            <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+              В работе использую современные проверенные подходы дошкольного образования,
+              которые помогают раскрыть потенциал каждого ребёнка
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <Card className="p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-muted/30">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Icon name="Blocks" size={28} className="text-primary" />
+                  </div>
+                  <h4 className="text-xl font-bold text-foreground">Метод Монтессори</h4>
+                </div>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Создание развивающей среды, где ребёнок самостоятельно выбирает занятия. 
+                  Использую специальные Монтессори-материалы для развития мелкой моторики, 
+                  сенсорного восприятия и логического мышления.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="text-xs">Самостоятельность</Badge>
+                  <Badge variant="secondary" className="text-xs">Сенсорика</Badge>
+                  <Badge variant="secondary" className="text-xs">Моторика</Badge>
+                </div>
+              </Card>
+
+              <Card className="p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-muted/30">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
+                    <Icon name="Users" size={28} className="text-accent" />
+                  </div>
+                  <h4 className="text-xl font-bold text-foreground">Социо-игровая технология</h4>
+                </div>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Обучение через игру в малых группах. Дети учатся договариваться, 
+                  работать в команде, решать конфликты и помогать друг другу. 
+                  Развивает коммуникативные навыки и эмоциональный интеллект.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="text-xs">Коммуникация</Badge>
+                  <Badge variant="secondary" className="text-xs">Командная работа</Badge>
+                  <Badge variant="secondary" className="text-xs">Социализация</Badge>
+                </div>
+              </Card>
+
+              <Card className="p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-muted/30">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-secondary/20 flex items-center justify-center">
+                    <Icon name="Lightbulb" size={28} className="text-secondary-foreground" />
+                  </div>
+                  <h4 className="text-xl font-bold text-foreground">Проектная деятельность</h4>
+                </div>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Реализация образовательных проектов, где дети исследуют интересующие их темы. 
+                  От идеи до результата: наблюдаем, экспериментируем, творим. 
+                  Развивает познавательную активность и критическое мышление.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="text-xs">Исследование</Badge>
+                  <Badge variant="secondary" className="text-xs">Творчество</Badge>
+                  <Badge variant="secondary" className="text-xs">Критическое мышление</Badge>
+                </div>
+              </Card>
+
+              <Card className="p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-muted/30">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Icon name="Heart" size={28} className="text-primary" />
+                  </div>
+                  <h4 className="text-xl font-bold text-foreground">Личностно-ориентированный подход</h4>
+                </div>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Учитываю индивидуальные особенности, темп развития и интересы каждого ребёнка. 
+                  Создаю ситуации успеха, поддерживаю инициативу и помогаю преодолевать трудности. 
+                  Уважение к личности — основа моей работы.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary" className="text-xs">Индивидуальность</Badge>
+                  <Badge variant="secondary" className="text-xs">Поддержка</Badge>
+                  <Badge variant="secondary" className="text-xs">Уважение</Badge>
+                </div>
+              </Card>
+            </div>
+
+            <Card className="p-8 bg-primary/5 border-primary/20">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Icon name="BookOpen" size={24} className="text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-foreground mb-3">
+                    Интеграция методик в повседневную практику
+                  </h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Не использую методики изолированно — комбинирую их элементы в зависимости от 
+                    задач и особенностей группы. Главный принцип: ребёнок в центре образовательного 
+                    процесса, а методики — инструменты для его развития. Регулярно повышаю 
+                    квалификацию, изучаю новые подходы и адаптирую их под реальные условия работы.
+                  </p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
