@@ -68,7 +68,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <Badge className="mb-4 bg-secondary text-secondary-foreground">Воспитатель МБДОУ №8 "Сказка" пгт Смоляниново Шкотовского муниципального округа Приморского края</Badge>
-            <h2 className="md:text-6xl mx-14 my-[30px] px-11 text-base font-semibold text-gray-900">Делис Татьяна Эдуардовна</h2>
+            <h2 className="md:text-6xl mx-14 my-[30px] px-11 text-base font-semibold text-blue-900">Делис Татьяна Эдуардовна</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
               Профессиональный воспитатель с 15-летним опытом работы в дошкольном образовании. 
               Специализируюсь на раннем развитии детей и индивидуальном подходе к каждому ребенку.
