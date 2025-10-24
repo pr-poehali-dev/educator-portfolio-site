@@ -7,24 +7,24 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 200 35% 20%;
+    --foreground: 240 10% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 35% 20%;
+    --card-foreground: 240 10% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 35% 20%;
+    --popover-foreground: 240 10% 15%;
 
-    --primary: 200 35% 30%;
+    --primary: 270 95% 65%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 350 70% 78%;
-    --secondary-foreground: 200 35% 20%;
+    --secondary: 340 95% 65%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 200 10% 45%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 5% 45%;
 
-    --accent: 200 40% 60%;
+    --accent: 200 95% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -100,5 +100,76 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Open Sans", sans-serif;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(168, 85, 247, 0.8);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

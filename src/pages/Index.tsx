@@ -44,118 +44,135 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border bg-white sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-xl font-bold text-primary">Делис Татьяна Эдуардовна</h1>
-          <nav className="hidden md:flex gap-6">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+      <header className="border-b border-border/50 glass-effect sticky top-0 z-50 backdrop-blur-lg">
+        <div className="container mx-auto px-4 py-5 flex items-center justify-between">
+          <h1 className="text-xl font-bold gradient-text">Делис Татьяна Эдуардовна</h1>
+          <nav className="hidden md:flex gap-8">
+            <a href="#" className="text-foreground hover:text-primary transition-all hover:scale-110 font-medium">
               Главная
             </a>
-            <a href="#methods" className="text-foreground hover:text-primary transition-colors">
+            <a href="#methods" className="text-foreground hover:text-primary transition-all hover:scale-110 font-medium">
               Методики
             </a>
-            <a href="#achievements" className="text-foreground hover:text-primary transition-colors">
+            <a href="#achievements" className="text-foreground hover:text-primary transition-all hover:scale-110 font-medium">
               Достижения
             </a>
-            <a href="#reviews" className="text-foreground hover:text-primary transition-colors">
+            <a href="#reviews" className="text-foreground hover:text-secondary transition-all hover:scale-110 font-medium">
               Отзывы
             </a>
-            <a href="#contacts" className="text-foreground hover:text-primary transition-colors">
+            <a href="#contacts" className="text-foreground hover:text-accent transition-all hover:scale-110 font-medium">
               Контакты
             </a>
           </nav>
         </div>
       </header>
 
-      <section className="py-20 bg-gradient-to-b from-muted to-background">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto">
-            <Badge className="mb-4 bg-secondary text-secondary-foreground">Воспитатель МБДОУ №8 "Сказка" пгт Смоляниново Шкотовского муниципального округа Приморского края</Badge>
-            <h2 className="md:text-6xl mx-14 my-[30px] px-11 text-base font-semibold text-blue-900">Делис Татьяна Эдуардовна</h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Профессиональный воспитатель с 15-летним опытом работы в дошкольном образовании. 
-              Специализируюсь на раннем развитии детей и индивидуальном подходе к каждому ребенку.
+      <section className="relative py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 animate-gradient"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="max-w-4xl mx-auto animate-fade-in-up">
+            <Badge className="mb-6 bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 text-sm animate-pulse-glow">
+              Воспитатель МБДОУ №8 "Сказка" пгт Смоляниново
+            </Badge>
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 gradient-text leading-tight">
+              Делис Татьяна<br/>Эдуардовна
+            </h2>
+            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
+              Профессиональный воспитатель с <span className="font-bold text-primary">15-летним опытом</span> работы<br/>
+              в дошкольном образовании 🎨✨
             </p>
+            <div className="flex gap-4 justify-center mt-8">
+              <a href="#methods" className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all">
+                Мои методики
+              </a>
+              <a href="#contacts" className="px-8 py-3 bg-white border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all">
+                Связаться
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="about" className="py-16 bg-white">
+      <section id="about" className="py-20 bg-gradient-to-b from-white to-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-foreground mb-8 text-center">Обо мне</h3>
+            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center">Обо мне 👩‍🏫</h3>
             <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <Card className="p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-primary bg-gradient-to-br from-white to-primary/5">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Icon name="Users" size={32} className="text-primary" />
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg">
+                    <Icon name="Users" size={36} className="text-white" />
                   </div>
                 </div>
-                <h4 className="font-semibold text-lg mb-2">15 лет опыта</h4>
-                <p className="text-muted-foreground text-sm">
+                <h4 className="font-bold text-xl mb-2 text-primary">15 лет опыта</h4>
+                <p className="text-muted-foreground">
                   Работа с детьми дошкольного возраста
                 </p>
               </Card>
-              <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <Card className="p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-accent bg-gradient-to-br from-white to-accent/5">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center">
-                    <Icon name="Star" size={32} className="text-accent" />
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-lg">
+                    <Icon name="Star" size={36} className="text-white" />
                   </div>
                 </div>
-                <h4 className="font-semibold text-lg mb-2">Соответсвие занимаемой должности</h4>
-                <p className="text-muted-foreground text-sm">
+                <h4 className="font-bold text-xl mb-2 text-accent">Соответствие должности</h4>
+                <p className="text-muted-foreground">
                   Подтвержденная квалификация педагога
                 </p>
               </Card>
-              <Card className="p-6 text-center hover:shadow-lg transition-shadow">
+              <Card className="p-8 text-center hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-secondary bg-gradient-to-br from-white to-secondary/5">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center">
-                    <Icon name="Sparkles" size={32} className="text-secondary-foreground" />
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center shadow-lg">
+                    <Icon name="Sparkles" size={36} className="text-white" />
                   </div>
                 </div>
-                <h4 className="font-semibold text-lg mb-2">Авторские методики</h4>
-                <p className="text-muted-foreground text-sm">
+                <h4 className="font-bold text-xl mb-2 text-secondary">Авторские методики</h4>
+                <p className="text-muted-foreground">
                   Разработка уникальных программ развития
                 </p>
               </Card>
             </div>
 
-            <div className="prose prose-lg max-w-none">
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Моя педагогическая философия основана на уважении к личности каждого ребенка 
+            <Card className="p-8 bg-gradient-to-br from-white via-primary/5 to-secondary/5 border-2 border-primary/20">
+              <p className="text-lg text-foreground/90 leading-relaxed mb-6">
+                🌟 Моя педагогическая философия основана на <span className="font-bold text-primary">уважении к личности</span> каждого ребенка 
                 и создании условий для его гармоничного развития. Я верю, что каждый ребенок 
-                уникален и обладает огромным потенциалом, который важно раскрыть через 
-                индивидуальный подход и творческое взаимодействие.
+                уникален и обладает огромным потенциалом.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
-                В своей работе использую современные методики дошкольного образования, 
-                сочетая классические педагогические принципы с инновационными подходами. 
-                Особое внимание уделяю эмоциональному интеллекту, развитию креативности 
-                и формированию социальных навыков у детей.
+              <p className="text-lg text-foreground/90 leading-relaxed">
+                💡 В своей работе использую <span className="font-bold text-secondary">современные методики</span> дошкольного образования, 
+                сочетая классические принципы с инновационными подходами. 
+                Особое внимание уделяю <span className="font-bold text-accent">эмоциональному интеллекту</span> и творчеству.
               </p>
-            </div>
+            </Card>
           </div>
         </div>
       </section>
 
-      <section id="methods" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
+      <section id="methods" className="py-20 bg-gradient-to-b from-muted/30 to-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-3xl font-bold text-foreground mb-4 text-center">
-              Образовательные методики
+            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-4 text-center">
+              Образовательные методики 📚
             </h3>
-            <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            <p className="text-center text-foreground/70 text-lg mb-16 max-w-3xl mx-auto">
               В работе использую современные проверенные подходы дошкольного образования,
               которые помогают раскрыть потенциал каждого ребёнка
             </p>
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <Card className="p-8 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-muted/30">
+              <Card className="p-8 hover:shadow-2xl transition-all hover:-translate-y-2 hover:scale-105 bg-gradient-to-br from-white via-primary/5 to-primary/10 border-2 border-transparent hover:border-primary">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <Icon name="Blocks" size={28} className="text-primary" />
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg">
+                    <Icon name="Blocks" size={32} className="text-white" />
                   </div>
-                  <h4 className="text-xl font-bold text-foreground">Метод Монтессори</h4>
+                  <h4 className="text-2xl font-bold gradient-text">Метод Монтессори</h4>
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Создание развивающей среды, где ребёнок самостоятельно выбирает занятия. 
