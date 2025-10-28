@@ -54,9 +54,7 @@ const Index = () => {
             <a href="#methods" className="text-foreground hover:text-primary transition-all hover:scale-110 font-medium">
               Методики
             </a>
-            <a href="#documents" className="text-foreground hover:text-secondary transition-all hover:scale-110 font-medium">
-              Документы
-            </a>
+            <a href="#documents" className="text-foreground hover:text-secondary transition-all hover:scale-110 font-medium">Достижения</a>
             <a href="#achievements" className="text-foreground hover:text-primary transition-all hover:scale-110 font-medium">
               Достижения
             </a>
