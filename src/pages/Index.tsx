@@ -271,9 +271,7 @@ const Index = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-4 text-center">
-              Документы и сертификаты 🏆
-            </h3>
+            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-4 text-center">Достижения и сертификаты 🏆</h3>
             <p className="text-center text-foreground/70 text-lg mb-16 max-w-3xl mx-auto">
               Дипломы, сертификаты повышения квалификации и профессиональные награды
             </p>
