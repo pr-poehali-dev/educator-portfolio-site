@@ -54,6 +54,9 @@ const Index = () => {
             <a href="#methods" className="text-foreground hover:text-primary transition-all hover:scale-110 font-medium">
               Методики
             </a>
+            <a href="#documents" className="text-foreground hover:text-secondary transition-all hover:scale-110 font-medium">
+              Документы
+            </a>
             <a href="#achievements" className="text-foreground hover:text-primary transition-all hover:scale-110 font-medium">
               Достижения
             </a>
@@ -266,11 +269,113 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="achievements" className="py-16 bg-muted">
+      <section id="documents" className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute top-1/4 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-4 text-center">
+              Документы и сертификаты 🏆
+            </h3>
+            <p className="text-center text-foreground/70 text-lg mb-16 max-w-3xl mx-auto">
+              Дипломы, сертификаты повышения квалификации и профессиональные награды
+            </p>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              <Card className="group overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-primary cursor-pointer">
+                <div className="aspect-[3/4] bg-gradient-to-br from-primary/5 via-white to-secondary/5 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 shadow-lg relative z-10 group-hover:scale-110 transition-transform">
+                    <Icon name="GraduationCap" size={48} className="text-white" />
+                  </div>
+                  <h4 className="font-bold text-xl text-center mb-3 relative z-10">Диплом о высшем образовании</h4>
+                  <Badge className="mb-4 relative z-10">2009</Badge>
+                  <p className="text-center text-sm text-muted-foreground relative z-10">
+                    Специальность: Дошкольное образование
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="group overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-accent cursor-pointer">
+                <div className="aspect-[3/4] bg-gradient-to-br from-accent/5 via-white to-primary/5 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-accent to-primary flex items-center justify-center mb-6 shadow-lg relative z-10 group-hover:scale-110 transition-transform">
+                    <Icon name="Award" size={48} className="text-white" />
+                  </div>
+                  <h4 className="font-bold text-xl text-center mb-3 relative z-10">Сертификат соответствия</h4>
+                  <Badge variant="secondary" className="mb-4 relative z-10">2024</Badge>
+                  <p className="text-center text-sm text-muted-foreground relative z-10">
+                    Соответствие занимаемой должности
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="group overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-secondary cursor-pointer">
+                <div className="aspect-[3/4] bg-gradient-to-br from-secondary/5 via-white to-accent/5 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center mb-6 shadow-lg relative z-10 group-hover:scale-110 transition-transform">
+                    <Icon name="BookOpen" size={48} className="text-white" />
+                  </div>
+                  <h4 className="font-bold text-xl text-center mb-3 relative z-10">Курсы повышения квалификации</h4>
+                  <Badge variant="outline" className="mb-4 relative z-10">2023</Badge>
+                  <p className="text-center text-sm text-muted-foreground relative z-10">
+                    Современные методики дошкольного образования
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="group overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-primary cursor-pointer">
+                <div className="aspect-[3/4] bg-gradient-to-br from-primary/5 via-white to-secondary/5 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 shadow-lg relative z-10 group-hover:scale-110 transition-transform">
+                    <Icon name="Medal" size={48} className="text-white" />
+                  </div>
+                  <h4 className="font-bold text-xl text-center mb-3 relative z-10">Благодарность министерства</h4>
+                  <Badge className="mb-4 relative z-10">2022</Badge>
+                  <p className="text-center text-sm text-muted-foreground relative z-10">
+                    За вклад в развитие дошкольного образования
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="group overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-accent cursor-pointer">
+                <div className="aspect-[3/4] bg-gradient-to-br from-accent/5 via-white to-primary/5 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-accent to-primary flex items-center justify-center mb-6 shadow-lg relative z-10 group-hover:scale-110 transition-transform">
+                    <Icon name="Trophy" size={48} className="text-white" />
+                  </div>
+                  <h4 className="font-bold text-xl text-center mb-3 relative z-10">Диплом победителя конкурса</h4>
+                  <Badge variant="secondary" className="mb-4 relative z-10">2021</Badge>
+                  <p className="text-center text-sm text-muted-foreground relative z-10">
+                    "Воспитатель года" - муниципальный этап
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="group overflow-hidden hover:shadow-2xl transition-all hover:-translate-y-2 border-2 border-transparent hover:border-secondary cursor-pointer">
+                <div className="aspect-[3/4] bg-gradient-to-br from-secondary/5 via-white to-accent/5 flex flex-col items-center justify-center p-8 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center mb-6 shadow-lg relative z-10 group-hover:scale-110 transition-transform">
+                    <Icon name="FileCheck" size={48} className="text-white" />
+                  </div>
+                  <h4 className="font-bold text-xl text-center mb-3 relative z-10">Сертификат семинара</h4>
+                  <Badge variant="outline" className="mb-4 relative z-10">2023</Badge>
+                  <p className="text-center text-sm text-muted-foreground relative z-10">
+                    "ФГОС ДО: новые подходы к организации образовательного процесса"
+                  </p>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" className="py-20 bg-gradient-to-b from-muted/30 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-3xl font-bold text-foreground mb-12 text-center">
-              Профессиональные достижения
+            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center">
+              Профессиональные достижения ⭐
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {achievements.map((achievement, index) => (
