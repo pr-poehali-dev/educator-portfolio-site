@@ -374,9 +374,7 @@ const Index = () => {
       <section id="achievements" className="py-20 bg-gradient-to-b from-muted/30 to-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center">
-              Профессиональные достижения ⭐
-            </h3>
+            <h3 className="text-4xl md:text-5xl font-bold gradient-text mb-12 text-center">Документы МБДОУ</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {achievements.map((achievement, index) => (
                 <Card 
